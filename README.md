@@ -3,13 +3,11 @@
 ## Introduction
 Dots and Boxes is a classic pen-and-paper game where two players take turns connecting adjacent dots on a grid. The goal is to create as many boxes as possible by completing the fourth side of a square. Each completed box awards the player with a point, and the player with the highest number of points at the end wins the game.
 
-This GitHub project is an implementation of the Dots and Boxes game using the Qt Creator framework. It provides a graphical user interface (GUI) that allows users to play the game against an AI opponent or another human player.
+This GitHub project is an implementation of the Dots and Boxes game using the Qt Creator framework. It provides a graphical user interface (GUI) that allows users to play the game against another human player.
 
 ## Features
 - Interactive GUI for a visually appealing gaming experience.
-- Two gameplay modes: against an AI opponent or against another human player.
-- Player vs. AI mode offers different difficulty levels to challenge the user.
-- The AI opponent uses intelligent strategies to make optimal moves.
+- Two-player gameplay mode for competitive matches.
 - Automatic detection of completed boxes and awarding points to the respective player.
 - Real-time score tracking during gameplay.
 - Game restart option to play multiple rounds without closing the application.
@@ -34,18 +32,12 @@ To run the game on your local machine, follow these steps:
 ## Project Structure
 The project's directory structure is organized as follows:
 
-- `src/` - Contains the source code files for the game.
-  - `main.cpp` - The entry point of the application.
-  - `mainwindow.h` - Header file for the main game window.
-  - `mainwindow.cpp` - Source file for the main game window.
-  - `gameboard.h` - Header file for the game board logic.
-  - `gameboard.cpp` - Source file for the game board logic.
-  - `aiplayer.h` - Header file for the AI player logic.
-  - `aiplayer.cpp` - Source file for the AI player logic.
-  - `player.h` - Header file for the human player logic.
-  - `player.cpp` - Source file for the human player logic.
-- `resources/` - Contains any additional resources used by the game, such as images or sounds.
-- `docs/` - Contains additional documentation or notes related to the project.
+- `CMakeLists.txt` - CMake build configuration file.
+- `CMakeLists.txt.user` - User-specific CMake build configuration file.
+- `main.cpp` - The entry point of the application.
+- `mainwindow.h` - Header file for the main game window.
+- `mainwindow.cpp` - Source file for the main game window.
+- `mainwindow.ui` - Qt Designer UI file for the main game window.
 
 ## Contributing
 Contributions to this project are welcome! If you have any ideas, suggestions, or bug fixes, please feel free to submit a pull request. Be sure to follow the project's code style and guidelines.
